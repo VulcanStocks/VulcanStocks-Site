@@ -1,21 +1,19 @@
-import React from 'react';
-import './css/Main.css';
+import ReactDOM from "react-dom/client";
 import {
-  BrowserRouter,
   Routes,
   Route,
-} from 'react-router-dom';
+} from "react-router-dom";
 import Home from './home';
+import Software from './software';
 
 
 
 function Main() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home />} />
-      </Routes>
-    </BrowserRouter>
+    <Routes>
+      <Route exact path="/" element={<Home />} />
+      <Route path="software" element={<Software />} />
+    </Routes>
   );
 }
 

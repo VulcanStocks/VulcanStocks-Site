@@ -4,17 +4,22 @@ import './index.css';
 import App from './components/main';
 import Header from './components/header';
 import Footer from './components/footer';
+import {
+  BrowserRouter,
+} from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode >
-    <div className='index'>
-      <Header />
-      <App />
-      <Footer />
-    </div>
-    
-  </React.StrictMode>
+  <BrowserRouter>
+    <React.StrictMode >
+      <div className='index'>
+        <Header />
+        <App />
+        <Footer />
+      </div>
+    </React.StrictMode>
+  </BrowserRouter>
+
 );
 
 // If you want to start measuring performance in your app, pass a function
