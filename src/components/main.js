@@ -1,11 +1,21 @@
+import React from 'react';
 import './css/Main.css';
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+} from 'react-router-dom';
+import Home from './home';
+
 
 
 function Main() {
   return (
-    <main>
-      <img  src='https://i.postimg.cc/G3KgdvbS/Bild-web.png' alt='' className='backgroundIMG'/>
-    </main>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
