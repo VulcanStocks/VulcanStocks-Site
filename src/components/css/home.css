@@ -3,12 +3,18 @@
     height: auto;
 }
 
-.backgroundDIV{
-
-    height: 1000px;
-
+.ContentRight{
+    display: flex;
+    justify-content: right;
 }
+
 
 main{
     background-color: #161622;
 }
+
+.VulcanStocksH1{
+    font-size: 100px;
+    margin: 100px;
+}
+
